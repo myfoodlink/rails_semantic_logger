@@ -132,7 +132,6 @@ module RailsSemanticLogger
       # Rails Patches
       require("rails_semantic_logger/extensions/action_cable/tagged_logger_proxy") if defined?(ActionCable)
       require("rails_semantic_logger/extensions/action_controller/live") if defined?(ActionController::Live)
-      require("rails_semantic_logger/extensions/action_dispatch/debug_exceptions") if defined?(ActionDispatch::DebugExceptions)
       if defined?(ActionView::StreamingTemplateRenderer::Body)
         require("rails_semantic_logger/extensions/action_view/streaming_template_renderer")
       end
